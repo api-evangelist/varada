@@ -1,0 +1,21 @@
+# Varada
+
+> Varada was a Tel Aviv-based data lake analytics accelerator that used proprietary, patented adaptive indexing to speed up Trino/Presto queries on data lakes. Backed by Lightspeed Venture Partners, Varada was acquired by Starburst Data on June 23, 2022; its technology and engineering team were folded into Starburst's query engine. The varada.io domain is no longer operated by the company (parked for sale), and its public GitHub organization is dormant. Varada published no public API.
+
+## Company
+
+- [GitHub organization](https://github.com/varadaio): Public repos for Varada's Presto/Trino tooling (dormant since 2022)
+- [Starburst acquisition press release](https://www.starburst.io/press-releases/starburst-acquires-varada-to-deliver-the-new-standard-of-data-lake-analytics/): June 23, 2022 announcement
+
+## Tooling (historical)
+
+- [varada-trino-manager](https://github.com/varadaio/varada-trino-manager): vtm CLI for managing Varada-accelerated Trino clusters (pip install from GitHub)
+- [presto-workload-analyzer](https://github.com/varadaio/presto-workload-analyzer): Collects and analyzes Presto/Trino workload statistics
+- [presto-powerbi](https://github.com/varadaio/presto-powerbi): PowerBI custom connector for Presto (Simba ODBC driver)
+
+## Catalog artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/varada/refs/heads/main/apis.yml): APIs.json profile for Varada in the API Evangelist network
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/varada/refs/heads/main/security/varada-domain-security.yml): Probed DNS/TLS posture of varada.io (parked)
+- [Packages](https://raw.githubusercontent.com/api-evangelist/varada/refs/heads/main/packages/varada-packages.yml): First-party package/registry survey
+- [CLI](https://raw.githubusercontent.com/api-evangelist/varada/refs/heads/main/cli/varada-cli.yml): vtm command surface

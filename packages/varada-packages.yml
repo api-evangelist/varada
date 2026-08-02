@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/varadaio
+note: >-
+  Varada (acquired by Starburst Data, June 2022) published its tooling on GitHub
+  rather than public package registries. Registry probes on 2026-07-21 found no
+  first-party packages: npm registry.npmjs.org/varada -> 404, PyPI
+  pypi.org/pypi/varada/json -> 404, pypi.org/pypi/varada-trino-manager/json -> 404.
+  The vtm CLI installs directly from the GitHub repository via pip.
+packages:
+  - language: python
+    registry: github
+    name: varada-trino-manager
+    url: https://github.com/varadaio/varada-trino-manager
+    install: pip install git+https://github.com/varadaio/varada-trino-manager
+    official: true
+    notes: Varada Trino Manager (vtm) CLI for managing Varada-accelerated Trino clusters; last pushed 2022-05-22.
+registry_probes:
+  - registry: npm
+    name: varada
+    status: 404
+  - registry: pypi
+    name: varada
+    status: 404
+  - registry: pypi
+    name: varada-trino-manager
+    status: 404

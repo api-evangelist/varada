@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/varadaio/varada-trino-manager/blob/master/README.md
+name: vtm (Varada Trino Manager)
+official: true
+status: dormant
+note: >-
+  First-party CLI for managing Varada-accelerated Trino clusters. The repository
+  has been dormant since Varada's June 2022 acquisition by Starburst Data
+  (last push 2022-05-22); captured here as the historical command surface
+  documented in the repo README.
+install:
+  - method: pip (from GitHub)
+    command: pip install git+https://github.com/varadaio/varada-trino-manager
+  - method: pip (cryptography build workaround)
+    command: CRYPTOGRAPHY_DONT_BUILD_RUST=1 pip install git+https://github.com/varadaio/varada-trino-manager
+binary: vtm
+global_flags:
+  - flag: -v, --verbose
+    description: Be more verbose
+commands:
+  - group: config
+    description: Config related commands
+  - group: connector
+    description: Connector related commands
+  - group: etc
+    description: More utilities
+  - group: logs
+    description: Logs related commands
+  - group: query
+    description: Query utility commands
+  - group: rules
+    description: Rules utility commands
+  - group: server
+    description: Server management related commands
+  - group: ssh
+    description: SSH related operations

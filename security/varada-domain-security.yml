@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: probed
+source: dig + TLS probe of varada.io (enrichment pipeline, manual probe run)
+note: >-
+  Varada was acquired by Starburst Data in June 2022 and the varada.io domain is
+  no longer operated by the company: nameservers point at ns1/ns2-coming-soon.sav.com
+  (a domain-marketplace parking service). HTTPS fails certificate verification and
+  port 80 serves an empty response. All records below are what was actually observed
+  on 2026-07-21 — absence is valid data.
+hosts:
+  - host: varada.io
+    https: false
+    https_error: SSLCertVerificationError (certificate verify failed)
+    port_80_open: true
+    hsts: false
+  - host: www.varada.io
+    https: false
+    https_error: connection failed (curl exit 92, HTTP 000)
+domains:
+  - domain: varada.io
+    nameservers:
+      - ns1-coming-soon.sav.com
+      - ns2-coming-soon.sav.com
+    parked: true
+    dnssec: false
+    caa: []
+    spf: false
+    dmarc: false
+    mx: false
