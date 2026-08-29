@@ -9,6 +9,17 @@ description: Varada was a Tel Aviv-based data lake analytics accelerator that us
   PowerBI Presto connector) on GitHub but no public API; the varada.io domain is now
   parked and its GitHub organization has been dormant since the acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/varada/refs/heads/main/apis.yml
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
